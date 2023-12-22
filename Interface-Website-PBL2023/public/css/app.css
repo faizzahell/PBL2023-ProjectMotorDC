@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #040D12;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .title-navbar h1 {
+  background: linear-gradient(45deg, lightpink, rebeccapurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header.navbar-container .navbar-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .navbar-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .navbar-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+
+header.navbar-container .navbar-list li:hover a {
+  background-color: #451952;
+}
+
+header.navbar-container .navbar-list li a:active {
+  background-color: #451952;
+}
+
+main.dashboard-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: black;
+  border-radius: 40px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #451952 10px 10px;
+
+  padding-block: 2rem;
+}
+
+main.dashboard-container .title-monitoring {
+  text-align: center;
+  color: white;
+  background-color: #1B2430;
+}
+
+main.dashboard-container .monitoring {
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+main.dashboard-container .monitoring .motor-direction {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.dashboard-container .monitoring .motor-direction .wrapper-direction {
+  display: flex;
+  gap: 3rem 2rem;
+}
+
+main.dashboard-container .monitoring .motor-direction .wrapper-direction .clockwise{
+  background-color: #5C5470;
+  padding: 0 70px;
+  border-radius: 30px;
+}
+
+main.dashboard-container .monitoring .motor-direction .wrapper-direction .counter-clockwise{
+  background-color: #5C5470;
+  padding: 0 40px;
+  border-radius: 30px;
+}
+
+main.dashboard-container .monitoring .motor-direction .title-direction {
+  font-size: 1.5rem;
+}
+
+main.dashboard-container .monitoring .motor-direction .chart-direction {
+  width: 100%;
+  margin: 20px auto;
+}
+
+main.dashboard-container .monitoring .motor-speed {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.dashboard-container .monitoring .motor-speed .title-speed {
+  font-size: 1.5rem;
+  
+}
+
+main.dashboard-container .monitoring .motor-speed .gauge-speed {
+  height: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+main.dashboard-container .monitoring .motor-speed .speedometer {
+  background-color: #13005A;
+  width: 400px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.05rem;
+}
+
+.voltmeter {
+  background-color: #13005A;
+  width: 400px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.05rem;
+}
+
+main.dashboard-container-controlling {
+  margin-top: 40px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: black;
+  border-radius: 40px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #451952 10px 10px;
+
+  padding-block: 2rem;
+}
+
+main.dashboard-container-controlling .title-controlling {
+  text-align: center;
+  color: white;
+  background-color: #1B2430;
+}
+
+main.dashboard-container-controlling .controlling .title-statement{
+  color: white;
+  font-size: 1.5rem;
+}
+
+main.dashboard-container-controlling .controlling {
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.dashboard-container-controlling .controlling .title-statement {
+  text-align: center;
+}
+
+main.dashboard-container-controlling .controlling .wrapper-control {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main.dashboard-container-controlling .controlling .wrapper-control button {
+  padding: 20px 100px;
+  cursor: pointer;
+}
+
+main.dashboard-container-controlling .controlling .wrapper-control button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+}
+ 
+button:active, button:hover {
+outline: 0;
+}
+
+button span {
+background-color: rgb(5, 6, 45);
+padding: 16px 64px;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+transition: 300ms;
+}
+
+button:hover span {
+background: none;
+}
+
+button:active {
+transform: scale(0.9);
+}
+
+footer.dashboard-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer.dashboard-footer .copyright {
+  background: linear-gradient(45deg, lightpink, rebeccapurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gap {
+  margin-top: 40px;
+}
+
+

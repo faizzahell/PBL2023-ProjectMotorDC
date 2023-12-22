@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Monitoring Thingspeak</title>
+</head>
+<body>
+  <header class="navbar-container">
+    <div class="title-navbar">
+      <h1>Monitoring Motor DC</h1>
+    </div>
+    <nav class="navbar-list">
+      <ul>
+        <li><a href="/">Dashboard</a></li>
+        <li><a href="/thingspeak">Thingspeak</a></li>
+        <li><a href="#">Member</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <h1 class="title-monitoring">MONITORING</h1>
+
+    <div class="monitoring">
+      <div class="motor-direction">
+        <p class="title-direction">Indicator Clockwise</p>
+        <iframe width="450" height="260" style="border: 10px solid #451952;" src="https://thingspeak.com/channels/2359142/widgets/756965"></iframe>
+      </div>
+      <div class="motor-speed">
+        <p class="title-speed">Indicator Counter Clockwise</p>
+        <iframe width="450" height="260" style="border: 10px solid #451952;" src="https://thingspeak.com/channels/2359142/widgets/756966"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <div class="gap"></div>
+
+  <main class="dashboard-container">
+    <div class="monitoring">
+      <div class="motor-direction">
+        <p class="title-direction">Grafik Clockwise</p>
+        <iframe width="450" height="260" style="border: 10px solid #451952;" src="https://thingspeak.com/channels/2359142/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div>
+      <div class="motor-speed">
+        <p class="title-speed">Grafik Counter Clockwise</p>
+        <iframe width="450" height="260" style="border: 10px solid #451952;" src="https://thingspeak.com/channels/2359142/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <div class="gap"></div>
+
+  <main class="dashboard-container">
+    <div class="monitoring">
+      <div class="motor-direction">
+        <p class="title-direction">Value Speed Analog</p>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2359142/widgets/772754"></iframe>
+      </div>
+      <div class="motor-speed">
+        <p class="title-speed">Voltage Monitoring</p>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2359142/widgets/772755"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p class="copyright">@Copyright by PBL Gadjah Mada University</p>
+  </footer>
+</body>
+</html>

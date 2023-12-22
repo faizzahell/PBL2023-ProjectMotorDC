@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Monitoring Motor DC</title>
+</head>
+<body>
+  <header class="navbar-container">
+    <div class="title-navbar">
+      <h1>Monitoring Motor DC</h1>
+    </div>
+    <nav class="navbar-list">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="/thingspeak">Thingspeak</a></li>
+        <li><a href="#">Member</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <h1 class="title-monitoring">MONITORING</h1>
+
+    <div class="monitoring">
+      <div class="motor-direction">
+        <p class="title-direction">Arah Putaran Motor</p>
+        <div class="chart-direction">
+          <canvas id="myLineChart"></canvas>
+        </div>
+        <div class="wrapper-direction">
+          <div class="clockwise" id="clockwise">
+            <p>Clockwise</p>
+          </div>
+          <div class="counter-clockwise" id="counter-clockwise">
+            <p>Counter-Clockwise</p>
+          </div>
+        </div>
+      </div>
+      <div class="motor-speed">
+        <p class="title-speed">Kecepatan Putar Motor</p>
+        <div class="gauge-speed">
+          <canvas id="gaugeChart"></canvas>
+        </div>
+        <div class="speedometer">
+          <p id="speed">XXXX .Rpm</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="gap"></div>
+
+  <main class="dashboard-container">
+    <div class="monitoring">
+      <div class="motor-direction">
+        <p class="title-direction">Voltage Monitoring</p>
+        <div class="voltmeter">
+          <p id="voltmeter">XXXX Volt</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main class="dashboard-container-controlling">
+    <h1 class="title-controlling">CONTROLLING</h1>
+
+    <div class="controlling">
+      <p class="title-statement">Pengaturan Arah Putar Motor DC</p>
+      <div class="wrapper-control">
+        <button class="clockwise-control">
+          <span>Clockwise</span>
+        </button>
+        <button class="conuter-clockwise-control">
+          <span>Counter Clockwise</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p class="copyright">@Copyright by PBL Gadjah Mada University</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gaugeJS"></script>
+  <script src="js/chart.js"></script>
+</body>
+</html>
